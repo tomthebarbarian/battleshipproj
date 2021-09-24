@@ -1,0 +1,239 @@
+.important {
+  font-weight: bold;
+  font-size: xx-large;
+  position: relative;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red
+}
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-wrap: break-word;
+  transition: background 500ms ease-in-out,color 200ms ease;
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
+  text-rendering: optimizeSpeed;
+}
+
+.type ol:not([class]) {
+  list-style: none;
+  margin-left: 3.5rem;
+  padding: 0;
+  position: relative;
+  counter-reset: ol-step-counter;
+}
+
+
+
+/* This is the container for everything*/
+#barchart {
+  position: absolute;
+  width: 75%;
+  height: 80%;
+  background-color: rgb(223, 134, 134);
+  border:10px;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: black;
+}
+
+/* This is the container for barsonly*/
+#mainBar {
+  top: 10%;
+  left: 10%;
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  background-color: rgba(80, 72, 72, 0.63);
+}
+#tblTitle {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  background-color: rgb(140, 230, 122);
+  display: display-box;
+}
+
+ul{
+  position: absolute;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+
+li{
+  background-color: rgb(221, 224, 212);
+  /*li margin is bar spacing*/
+  position: relative;
+  height: 50%;
+  width: 18.8%;
+  max-height: 99%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 2%;
+  margin-bottom: 0;
+  margin-top: 0;
+  opacity: 0.5;
+}
+
+
+
+.bar{
+  background-color: rgb(221, 224, 212);
+  position: relative;
+  height: 50%;
+  width: 18.8%;
+  max-height: 99%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 2%;
+  margin-bottom: 0;
+  margin-top: 0;
+  opacity: 0.5;
+}
+
+.column{
+  background-color: rgb(221, 224, 212);
+  height: 100%;
+  width: 10%;
+  max-height: 99%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right:0%;
+}
+
+#barplacehold {
+  position: absolute;
+  left : 0%;
+  display: none;
+}
+
+.maxBar {
+  /*placeholding*/
+  height: 99%;
+}
+
+#tickplacehold{
+  margin:0;
+  border: thin;
+  border-color: black;
+  display: none;
+}
+
+#board{
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  bottom:0%;
+
+  display: block;
+}
+
+.rows {
+  width: 100%;
+  height: 9.5%;
+  margin-top: 0.5%;
+  margin-left: 0%;
+  margin-bottom: 0%;
+  margin-right: 0%;
+  list-style-type: none;
+  text-align: justify;
+  opacity: 1;
+}
+
+/*
+.notmaxbar {
+  width: 100%* currvalue / maxvalue;
+}
+*/
+
+
+#xAxis {
+  position: absolute;
+  margin-left: 10%;
+  height: 10%;
+  top: 90%;
+  width: 90%;
+  background-color: rgb(122, 226, 230)
+
+}
+
+#xTitle{
+  position: absolute;
+  height: 50%;
+  width:  100%;
+  top: 50%;
+  margin: 0%;
+
+}
+
+#xLabs{
+  position: absolute;
+  height: 50%;
+  width:  100%;
+  top: 0%;
+}
+
+#yAxis {
+  top: 10%;
+  position: absolute;
+  height: 80%;
+  width: 10%;
+  background-color: rgb(236, 152, 229);
+  display:flex;
+}
+
+#yTitle{
+  position: absolute;
+  width:50%;
+  height: 20%;
+  align-content: flex-end;
+  display: flex;
+  top: 45%;
+  margin:0%;
+}
+
+#yLabs{
+  position: absolute;
+  display: block;
+  width:50%;
+  height: 99%;
+  left:50%;
+  bottom: 0%;
+  align-items: flex-end;
+}
+
+.axis{
+  font-weight: 600;
+}
+
+main {
+  text-align:center;
+}
+
+#tblTitle{
+  margin: 0;
+}
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/drawbar.js"></script>
+    <link rel='stylesheet' href= styles/boardstyle.css>
+    <script id = 'columncript'>
+      let data = [0,1,2,3,4,5]
+      //drawBarChart(data, options, '#barchart')
+      // we're going to make doms and backgrounds to make our chart
+    </script>
+  </head>
+  <body>
+
+    <main id = 'main-content'>
+      <header>
+        <h1 >This is the main title</h1>
+        <button id="btn1">this is btn1</button>
+      </header>
+      <section id = 'barchart'>
+        <header >
+          <h2 id = 'tblTitle'>This is the main title of the barchart</h2>
+        </header>
+        <section id = 'mainBar'>
+          <!--<h3 id = 'barplacehold'>This is the main graph section</h3>-->
+          <ul id = 'board'>
+            <li class = 'rows'>rows 0
+              <ul class = 'columnhold'>
+                <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+             </ul>
+            </li>
+            <li class = 'rows'>rows 1              
+              <ul >
+              <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+           </ul>
+          </li>
+            <li class = 'rows'>rows 2
+              <ul class = 'columnhold'>
+                <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+             </ul>
+            </li>
+            <li class = 'rows'>rows 3
+              <ul class = 'columnhold'>
+                <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+             </ul>
+            </li>
+
+            <li class = 'rows'>rows 4
+              <ul class = 'columnhold'>
+                <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+             </ul>
+            </li>
+            <li class = 'rows'>rows 5
+              <ul class = 'columnhold'>
+                <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+             </ul>
+            </li>
+            <li class = 'rows'>rows 6
+              <ul class = 'columnhold'>
+                <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+             </ul>
+            </li>
+            <li class = 'rows'>rows 7
+              <ul class = 'columnhold'>
+                <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+             </ul>
+            </li>
+            <li class = 'rows'>rows 8
+              <ul class = 'columnhold'>
+                <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+             </ul>
+            </li>
+            <li class = 'rows'>rows 9
+              <ul class = 'columnhold'>
+                <!-- Items in row -->
+                <li class = 'column'>col 0</li>
+                <li class = 'column'>col 1</li>
+                <li class = 'column'>col 2</li>
+                <li class = 'column'>col 3</li>
+                <li class = 'column'>col 4</li>
+                <li class = 'column'>col 5</li>
+                <li class = 'column'>col 6</li>
+                <li class = 'column'>col 7</li>
+                <li class = 'column'>col 8</li>
+                <li class = 'column'>col 9</li>
+             </ul>
+            </li>
+
+          </ul>
+
+        </section>
+        <aside class = 'axis' id = 'yAxis'>
+          <h4 id = yTitle>Y axis</h4>
+          <ul id = 'yLabs'>
+            <li class = 'rows'>rows 0</li>
+            <li class = 'rows'>rows 1</li>
+            <li class = 'rows'>rows 2</li>
+            <li class = 'rows'>rows 3</li>
+            <li class = 'rows'>rows 4</li>
+          </ul>
+        </aside>
+        <footer class = 'axis' id = 'xAxis'>
+          <h4 id = xTitle>X axis</h4>
+          <ul id = 'xLabs'>
+            <!--All these should be length based on max-->
+            <!--max bar, margin right and left-->
+            <li class = 'maxBar'>this is the max bar</li>
+            <li class = 'text test'>98</li>
+            <li>col 2</li>
+            <li>col 3</li>
+            <li id = 'array-elem-n'>there doesn't need to be text here</li>
+          </ul>
+        </footer>
+      </section>
+
+    </main>
+    </body>
+</html>
